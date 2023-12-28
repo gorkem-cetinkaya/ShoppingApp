@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Cart",
+    "\\Views\\Home",
+    "\\Views\\Product",
+    "\\wwwroot",
+    "\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\bin",
+  "PreviewInSolutionExplorer": false
+}

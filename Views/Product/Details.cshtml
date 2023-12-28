@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayları</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .parca {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1,
+        h3 {
+            color: #007bff;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="parca">
+            @if (@Model.Image != null)
+            {
+                string img64 = Convert.ToBase64String(@Model.Image);
+                string img64Url = string.Format("data:image/" + "png" + ";base64,{0}", img64);
+
+            <img src="@img64Url" alt="Product Image">
+            }
+        </div>
+        <div class="parca">
+            <h1>@Model.Name</h1>
+            <h3>Price: @Model.Price</h3>
+            <h3>Rating: @Model.Rating/5</h3>
+            <button class="btn btn-success" onclick="getCart(@Model.ProductId)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="footer">
+        <h6>@Model.Details</h6>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function getCart(id) {
+            $.post("@Url.Action("AddCart", "Cart")", { id: id }, function () {
+                alert("Added to Cart");
+            });
+        }
+    </script>
+</body>
+
+</html>

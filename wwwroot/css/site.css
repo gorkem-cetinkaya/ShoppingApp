@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #e44d26;
+}
+
+#cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    width: calc(25% - 30px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+    }
+
+.card-info {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e44d26;
+    font-size: 18px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add-to-cart, .go-to-product {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.go-to-product {
+    background-color: #e44d26;
+    color: #fff;
+}
+
+    .add-to-cart:hover, .go-to-product:hover {
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 18px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #e44d26;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }

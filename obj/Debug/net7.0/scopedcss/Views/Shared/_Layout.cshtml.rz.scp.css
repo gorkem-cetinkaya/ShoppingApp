@@ -1,0 +1,122 @@
+header h1[b-3313gijnte] {
+    text-align: center;
+    color: #e44d26;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.navbar[b-3313gijnte] {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand[b-3313gijnte] {
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navbar-toggler-icon[b-3313gijnte] {
+    background-color: #fff;
+}
+
+.nav-item[b-3313gijnte] {
+    margin-right: 15px;
+}
+
+.nav-link[b-3313gijnte] {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+    .nav-link:hover[b-3313gijnte] {
+        color: #e44d26;
+    }
+
+select[b-3313gijnte] {
+    padding: 12px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+}
+
+.container[b-3313gijnte] {
+    margin-top: 30px;
+}
+
+.footer[b-3313gijnte] {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+    .footer a[b-3313gijnte] {
+        color: #e44d26;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .footer a:hover[b-3313gijnte] {
+            color: #fff;
+        }
+
+    .footer .btn[b-3313gijnte] {
+        margin: 10px;
+    }
+
+.btn-outline-dark[b-3313gijnte],
+.btn-outline-primary[b-3313gijnte] {
+    color: #e44d26;
+    border-color: #e44d26;
+    font-weight: bold;
+}
+
+    .btn-outline-dark:hover[b-3313gijnte],
+    .btn-outline-primary:hover[b-3313gijnte] {
+        color: #fff;
+        background-color: #e44d26;
+        border-color: #e44d26;
+    }
+
+.cart-button:hover .cart-icon[b-3313gijnte] {
+    stroke: #e44d26;
+}
+
+.cart-button:hover[b-3313gijnte] {
+    color: #e44d26;
+}
+
+.cart-button[b-3313gijnte] {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    width: fit-content;
+}
+
+.cart-icon[b-3313gijnte] {
+    margin-right: 5px; 
+    filter: invert(100%);
+}
+
+.cart-text[b-3313gijnte] {
+    color: #fff; 
+    font-size: 1.2em;
+}
+
+.btn-outline-primary[b-3313gijnte] {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
